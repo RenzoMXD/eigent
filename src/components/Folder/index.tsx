@@ -701,7 +701,7 @@ export default function Folder({ data: _data }: { data?: Agent }) {
 
         {/* content */}
         <div
-          className={`min-h-0 flex-1 ${selectedFile?.type === 'html' && !isShowSourceCode ? 'overflow-hidden' : 'scrollbar-always-visible overflow-y-auto'}`}
+          className={`flex min-h-0 flex-1 flex-col ${selectedFile?.type === 'html' && !isShowSourceCode ? 'overflow-hidden' : 'scrollbar-always-visible overflow-y-auto'}`}
         >
           <div
             className={`flex min-h-full flex-col ${selectedFile?.type === 'html' && !isShowSourceCode ? 'h-full' : ''} ${selectedFile?.type === 'html' && !isShowSourceCode ? '' : 'p-6'} file-viewer-content`}
